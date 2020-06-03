@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">isFavourite</th>
+        <th scope="col">addFavourite</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let planet of Planets">
+        <th scope="row">{{planet.id}}</th>
+        <td>{{planet.isFavourite}}</td>
+        <td (click)="addToFev(planet)"><i *ngIf="!planet.isFavourite" class='far fa-heart'></i><i *ngIf="planet.isFavourite" class='fas fa-heart' style='color:red'></i></td>
+      </tr>
+      
+    </tbody>
+  </table>

@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<hr>
+<div class="container">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/planets']" routerLinkActive="active">Planets</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink='/fev' routerLinkActive="active">Fev-Planets</a>
+    </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
